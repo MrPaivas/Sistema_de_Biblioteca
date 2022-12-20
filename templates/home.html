@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Biblioteca</title>
+<link rel='stylesheet' href="../static/home.css">
+</head>
+<body>
+    <div class="box">
+        <form action="home.php" method="POST">
+            <fieldset>
+                <legend><b><h1>Biblioteca Aguas Claras</h1></b></legend>
+                <br>
+                <div class="page">
+                    <br>
+                    <a href="/cadastro_acervo" style="color: white">Cadastro Acervo</a>
+                </div>
+
+
+
+                <div class="page2">
+                    <br>
+                    <a href="/cadastro_alunos" style="color: white">Cadastro Alunos</a>
+
+                </div>
+
+
+
+                <div class="page3">
+                    <br>
+                    <a href="/devolver_livros" style="color: white">Devolver Livros</a>
+
+                </div>
+
+
+
+                <div class="page4">
+                    <br>
+                    <a href="/emprestar_livros" style="color: white">Emprestar Livros</a>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="page5">
+                    <br>
+                    <a href="/" style="color: white">Encerrar Sessao</a>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">Nome do Livro</th>
+                    <th scope="col">Autor</th>
+                    <th scope="col">Codigo do livro</th>
+                    <th scope="col">Edicao</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Exemplares Disponiveis</th>
+                </tr>
+            </thead>
+            <tbody>
+            {%for livro in livros%}
+                        <tr>
+                        <td>{{livro.nome_livro}}</td>
+                        <td>{{livro.autor}}</td>
+                        <td>{{livro.codigo}}</td>
+                        <td>{{livro.quantidade}}</td>
+                        <td>{{livro.edicao}}</td>
+                        <td>{{livro.quant_disponivel}}</td>
+                        </tr>
+            {%endfor%}
+            </tbody>
+
+     </table>
+    <div class="busca">
+        <p>Faca aqui a sua busca de acervo:</p>
+        <input type="search" class="search" placeholder="pesquisar" id="pesquisar" name="search">
+        <button type="submit">buscar</button>
+    </div>
+</body>
+
+</html>

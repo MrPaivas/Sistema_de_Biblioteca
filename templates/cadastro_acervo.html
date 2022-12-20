@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Biblioteca</title>
+    <link rel="stylesheet" href="../static/cadastro_acervo.css">
+</head>
+<body>
+    <div class="box">
+        <form action="cadastro_acervo.php" method="POST">
+            <fieldset class="campo">
+                <legend class="legenda"><b><h1>Biblioteca Aguas Claras</h1></b></legend>
+                <br>
+                <div class="page">
+                    <br>
+                    <a href="/home" style="color: white">Consulta Acervo</a>
+                </div>
+
+
+
+                <div class="page2">
+                    <br>
+                    <a href="/cadastro_alunos" style="color: white">Cadastro Alunos</a>
+
+                </div>
+
+
+
+                <div class="page3">
+                    <br>
+                    <a href="/devolver_livros" style="color: white">Devolver Livros</a>
+
+                </div>
+
+
+
+                <div class="page4">
+                    <br>
+                    <a href="/emprestar_livros" style="color: white">Emprestar Livros</a>
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="page5">
+                    <br>
+                    <a href="/"style="color: white">Encerrar Sessao</a>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+    </div>
+    <div>
+        <form action="/cadastrar_acervo" method="POST" class="formulario">
+            <fieldset>
+                <legend><b><h2>Cadastro de Acervo:</h2></b></legend>
+                <div>
+                    <label>Nome do Livro</label><br>
+                    <input type="text" name="nome_do_livro" class="inputuser" required><br>
+
+                </div>
+                <br>
+                <div>
+                    <label>Autor</label><br>
+                    <input type="text" name="autor" class="inputuser2" required><br>
+
+                </div>
+                <br>
+                <div>
+                    <label>Código do Livro</label><br>
+                    <input type="text" name="codigo" class="inputuser3" required>
+
+                </div>
+                <br>
+                <div>
+                    <label>Edição </label><br>
+                    <input type="number" name="edicao" class="inputuser4" required><br>
+
+                </div>
+                <br>
+                <div>
+                    <label>Quantidade de exemplares </label><br>
+                    <input type="number" name="quantidade" class="inputuser5" required><br>
+
+                </div>
+                <br>
+                <div>
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

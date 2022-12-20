@@ -1,0 +1,29 @@
+ <style>
+        body{
+            font-family: Arial;
+            background-image: linear-gradient(to right, rgb(176,196,222), rgb(245,255,250));
+        }
+        .box{
+            color: rgb(218, 218, 218);
+            width: 350px;
+            height: 100%;
+            background-color: rgba(56, 49, 49, 1);
+            padding: 15px;
+            position: absolute;
+            top: 0px; left: 0px;
+        }
+        .inputuser{
+            position: center;
+            width: 90%;
+        }
+        .inputuser2{
+            position: center;
+            width: 90%;
+        }
+        .loginbox{
+            width: 100%;
+            position: center;
+        }
+
+
+ </style>

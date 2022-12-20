@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Biblioteca</title>
+    <link rel="stylesheet" href="../static/emprestar_livros.css">
+</head>
+<body>
+    <div class="box">
+        <form action="/devolvendo" method="POST">
+            <fieldset>
+                <legend><h1>Devolver Livros</h1></legend>
+                <br>
+                <div class="inputbox">
+                    <label>Codigo Livro:</label><br>
+                    <input type="text" name="codigo" class="inputuser" required><br>
+
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label>Matricula do Aluno</label><br>
+                    <input type="text" name="matricula"  class="inputuser" required><br>
+                </div>
+                <br>
+                <br>
+                <input type="submit" name="emprestar">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="page4">
+                    <br>
+                    <a href="/home"style="color: white">Voltar</a>
+
+                </div>
+                <div class="page5">
+                    <br>
+                    <a href="/"style="color: white">Encerrar Sessao</a>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">Codigo do livro</th>
+                    <th scope="col">Matricula do Aluno</th>
+                    <th scope="col">Data do Emprestimo</th>
+                    <th scope="col">Data do Devolucao</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {% for lista in listas %}
+
+                    <tr>
+                        <td>{{lista.codigo}}</td>
+                        <td>{{lista.matricula_aluno}}</td>
+                        <td>{{lista.data_emp}}</td>
+                        <td>{{lista.data_dev}}</td>
+                    </tr>
+                    {% endfor %}
+            </tbody>
+
+     </table>
+    <div class="busca">
+        <p>Faca aqui a sua busca de Alunos:</p>
+        <input type="search" class="search" placeholder="pesquisar" id="pesquisar" name="search">
+        <button onclick="searchData()" type="submit">buscar</button>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(176,196,222), rgb(245,255,250));
+        }
+        .box{
+            color: white;
+            background-color: rgba(56, 49, 49, 1);
+            padding: 0px;
+            position: absolute;
+            top: 0px; left: 0px;
+            height: 100%;
+        }
+        .campo{
+            border: 1px solid rgb(56, 49, 49);
+            width: 350px;
+            height: 100%;
+        }
+        .legenda{
+            border: 1px solid  rgb(56, 49, 49);
+            padding: 20px;
+            text-align: center;
+            background-color:  rgba(120, 116, 116, 0.747);
+            width: 350px;
+
+
+        }
+        .page{
+            border: 1px solid  rgb(56, 49, 49);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(56, 49, 49, 1);
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .page:hover {
+            background-color: rgb(120, 116, 116);
+        }
+        .page2{
+            border: 1px solid  rgb(56, 49, 49);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(56, 49, 49, 1);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .page2:hover {
+            background-color: rgb(120, 116, 116);
+        }
+        .page3{
+            border: 1px solid  rgb(56, 49, 49);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(56, 49, 49, 1);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .page3:hover {
+            background-color: rgb(120, 116, 116);
+        }
+        .page4{
+            border: 1px solid  rgb(56, 49, 49);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(56, 49, 49, 1);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .page4:hover {
+            background-color: rgb(120, 116, 116);
+        }
+        .page5{
+            border: 1px solid  rgb(56, 49, 49);
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(56, 49, 49, 1);
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .page5:hover {
+            background-color: rgb(120, 116, 116);
+        }
+        a{
+            text-decoration: none;
+        }
+        .formulario{
+            position: absolute;
+            top: 20%;
+            left: 32%;
+            width: 900px;
+            height: 500px;
+            border: 3px solid black;
+        }
+        .inputuser{
+            width: 400px;
+        }
+        .inputuser2{
+            width: 400px;
+        }
+        .inputuser5{
+            width: 190px;
+        }
+    </style>

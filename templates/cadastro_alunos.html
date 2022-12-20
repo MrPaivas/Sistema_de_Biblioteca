@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Biblioteca</title>
+    <link rel="stylesheet" href="../static/cadastro_alunos.css">
+</head>
+<body>
+    <div class="box">
+        <form action="/cadastrar_aluno" method="POST">
+            <fieldset>
+                <legend><h1>Cadastro de Alunos</h1></legend>
+                <br>
+                <div class="inputbox">
+                    <label>Nome do Aluno:</label><br>
+                    <input type="text" name="nome1" class="inputuser" required><br>
+
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label>Telefone:</label><br>
+                    <input type="text" name="fone_number1"  class="inputuser" required><br>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label>E-mail:</label><br>
+                    <input type="text" name="email1"  class="inputuser" required><br>
+
+                </div>
+                <br>
+                <div class="inputbox">
+                    <label>Matricula:</label><br>
+                    <input type="text" name="matricula1" class="inputuser" required><br>
+                </div>
+                <br>
+                <input type="submit" name="busca_aluno">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="page4">
+                    <br>
+                    <a href="/home"style="color: white">Voltar</a>
+
+                </div>
+                <div class="page5">
+                    <br>
+                    <a href="/"style="color: white">Encerrar Sessao</a>
+
+                </div>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <table border="1">
+            <thead>
+                <tr>
+                    <th scope="col">Nome do Aluno</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Matricula</th>
+                    <th scope="col">Livros Emprestados</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {% for lista in listas%}
+                        <tr>
+                        <td>{{lista.nome_aluno}}</td>
+                        <td>{{lista.telefone}}</td>
+                        <td>{{lista.email}}</td>
+                        <td>{{lista.matricula}}</td>
+                        <td>{{lista.livros_emprestados}}</td>
+                        </tr>
+                    {%endfor%}
+            </tbody>
+
+     </table>
+    <div class="busca">
+        <p>Faca aqui a sua busca de Alunos:</p>
+        <input type="search" class="search" placeholder="pesquisar" id="pesquisar" name="search">
+        <button onclick="searchData()" type="submit">buscar</button>
+
+
+    </div>
+
+</body>
+
+</html>
